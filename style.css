@@ -71,21 +71,31 @@ h3 {
 
 a {
   text-decoration: none;
-  color: gray;
+  color: rgb(167, 148, 87);
+  font-size: 150%;
 }
 
-a:hover{
-  color: #333;
-  font-size: 101%;
+a:hover {
+  color: rgb(184, 169, 119);
+  font-size: 151%;
+}
+
+.back {
+  font-size: 100%;
+}
+
+.back:hover {
+  font-size: 100%;
 }
 
 .top-nav {
   width: 100%;
-  background-color: #222;
+  background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
   padding: 12px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
+
 }
 
 .top-nav a {
