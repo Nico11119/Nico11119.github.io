@@ -1,19 +1,26 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(67deg, rgba(209, 209, 209, 1) 0%, rgba(255, 239, 212, 1) 100%);
+  font-family: 'Montserrat', Arial, sans-serif;
   text-align: center;
   color: #333;
-  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(120deg, #d9d9d9, #e4d8c3, #ece3d9, #dcd6c0, #e8e0d8, #d0c8b0, #e0e0e0);
+  background-size: 600% 600%;
+  animation: gradientBG 30s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 h1 {
   margin-top: 30px;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: 'Anton', sans-serif;
   color: #333;
 }
@@ -95,7 +102,6 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-
 }
 
 .top-nav a {
